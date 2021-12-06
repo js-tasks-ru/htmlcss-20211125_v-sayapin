@@ -1,0 +1,64 @@
+@import '../../assets/css/colors.css';
+
+:root {
+    --color-primary-hover: #2342C0;
+    --color-secondary-hover: #5028C6;
+    --color-border-alternative: var(--color-grey-3);
+    --color-border-alternative-hover: var(--color-black);
+}
+
+.button {
+    border-radius: 8px;
+    padding: 5px 10px;
+
+    min-width: 189px;
+    min-height: 48px;
+
+    text-align: center;
+}
+
+.button:hover {
+    border-radius: 8px;
+    min-width: 189px;
+    min-height: 48px;
+
+    cursor: pointer;
+}
+
+.button:active {
+    padding-top: 11px;
+    padding-bottom: 9px;
+}
+
+.button:disabled,
+.button[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.button_primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.button_primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.button_secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.button_secondary:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+.button_alternative {
+    border: 1px solid var(--color-border-alternative);
+    background-color: var(--color-alternative);
+}
+
+.button_alternative:hover {
+    border-color: var(--color-border-alternative-hover);
+}
